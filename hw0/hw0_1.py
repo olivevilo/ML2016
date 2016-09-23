@@ -1,1 +1,1 @@
-from PIL import image
+import pandas
