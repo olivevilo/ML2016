@@ -25,4 +25,8 @@ for content, i in zip(contents, range(len(contents))):
 results.sort()
 # final output format
 results = map(str, results)
-print ','.join(results)
+
+final_result = ','.join(results)
+
+with open("ans1.txt", "w") as text_file:
+    text_file.write(final_result)
