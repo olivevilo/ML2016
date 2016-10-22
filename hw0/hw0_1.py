@@ -3,6 +3,7 @@ import sys
 col = int(sys.argv[1])
 fileName = sys.argv[2]
 
+# python garbage collection mechanism
 with open(fileName) as f:
     contents = f.read().splitlines()
 
@@ -30,3 +31,5 @@ final_result = ', '.join(results)
 
 with open("ans1.txt", "w") as text_file:
     text_file.write(final_result)
+
+# future work: rewrite by pandas?!
